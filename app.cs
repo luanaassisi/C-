@@ -13,3 +13,5 @@ namespace ExempleAppConsole
         }
     }
 }
+
+Obtendo informação do usuarios
