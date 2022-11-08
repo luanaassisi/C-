@@ -12,6 +12,20 @@ namespace Aula06
             Console.Write("Digite um número entre 1 e 10: ");
             int n = Convert.ToInt32(Console.ReadLine());
             int hora = DateTime.Now.Hour;
+            string mensagem = string.Empty;
+            switch (hora)
+            {
+                case 10:
+                case 15:
+                mensagem ="hora do intervalo";
+                break;
+                case 12:
+                mensagem = "Almoço";
+                break;
+                default:
+                mensagem =string.Empty;
+                break;
+            }
 
             if(hora > 17){
                 Console.WriteLine("Boa noite!");
